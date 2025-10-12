@@ -1,0 +1,7 @@
+num=input()
+
+print(num)
+
+user_name=input("Enter your name: ")
+
+print("Hello",user_name)
