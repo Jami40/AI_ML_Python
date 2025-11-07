@@ -30,6 +30,7 @@ This repository contains hands-on Python code examples, exercises, and Jupyter n
 - **Object-Oriented Programming**: Classes, inheritance, polymorphism, encapsulation
 - **File Handling**: Reading, writing, and manipulating files
 - **NumPy**: Arrays, operations, linear algebra, statistics
+- **Pandas**: DataFrames, data loading, cleaning, preprocessing, and analysis
 
 ---
 
@@ -75,6 +76,12 @@ AI_ML_Python/
 ├── Module_8.ipynb                  # Object-Oriented Programming
 ├── Module_10.ipynb                 # NumPy Basics & Arrays
 ├── Module_11.ipynb                 # NumPy Advanced & Linear Algebra
+├── Module_12_Related_File/         # Pandas - Data Analysis & Manipulation
+│   ├── Module_12.ipynb             # Pandas complete tutorial
+│   ├── student_data (1).csv        # Sample CSV dataset
+│   ├── phitron_student_marks.xlsx  # Sample Excel dataset
+│   ├── students.parquet            # Sample Parquet dataset
+│   └── data.json                   # Sample JSON dataset
 └── start.ipynb                     # Quick Start
 ```
 
@@ -368,6 +375,99 @@ AI_ML_Python/
 
 ---
 
+### 🟢 Module 12 - Pandas for Data Analysis
+**Complete guide to Pandas library**
+
+#### **Module_12.ipynb** Topics:
+
+#### 📊 Introduction to Pandas
+- What is Pandas?
+- Data cleaning and preprocessing
+- Data analysis capabilities
+- **DataFrame**: Core tabular data structure
+- **Series**: Single column data structure
+
+#### 📂 Loading Different File Formats
+- **CSV files**: read_csv()
+- **Excel files**: read_excel() (.xlsx)
+- **Parquet files**: read_parquet()
+- **JSON files**: read_json()
+
+#### 🔍 Basic DataFrame Operations
+- **Viewing data**:
+  - head(), tail() - First/last rows
+  - sample() - Random samples
+  - info() - DataFrame information
+  - describe() - Statistical summary
+- **DataFrame attributes**:
+  - columns - Column names
+  - index - Row indices
+  - shape, size, dtypes
+
+#### 🏗️ Creating DataFrames
+- From **lists**: pd.DataFrame(list)
+- From **tuples**: pd.DataFrame(tuple)
+- From **dictionaries**: pd.DataFrame(dict)
+- From **list of dictionaries**
+- Custom index and column names
+
+#### 🎯 Accessing Data
+- **Column selection**: df['column_name']
+- **loc[]**: Label-based indexing
+  - Single row: df.loc[0]
+  - Multiple rows: df.loc[[2,5,17]]
+  - Row ranges: df.loc[4:18]
+  - Single column: df.loc[:, 'ColumnName']
+  - Multiple columns: df.loc[:, ['Col1', 'Col2']]
+  - Rows with columns: df.loc[3:7, 'Column']
+- **iloc[]**: Integer position-based indexing
+
+#### ✏️ Modifying DataFrames
+- **Index operations**:
+  - set_index() - Set custom index
+  - reset_index() - Reset to default
+- **Renaming**:
+  - rename() - Rename columns/rows
+- **Changing values**:
+  - Single cell: df.loc[row, col] = value
+  - Multiple cells: df.loc[3:6, 'Col'] += 2
+- **Deletion**:
+  - drop() - Remove rows/columns
+  - inplace parameter for permanent changes
+
+#### 🔄 Iteration
+- **iterrows()**: Iterate as (index, Series) pairs
+- **itertuples()**: Iterate as named tuples
+
+#### 📈 Sorting Data
+- **sort_values()**: Sort by column values
+  - Single column sorting
+  - Multiple column sorting
+  - ascending/descending order
+  - Custom sorting: ascending=[0,1]
+
+#### 🔎 Filtering Data
+- **Conditional filtering**:
+  - Single condition: df.loc[df['Col'] == value]
+  - Multiple conditions with & (and)
+  - Multiple conditions with | (or)
+- **Boolean indexing**
+- **Comparison operators**: ==, !=, >, <, >=, <=
+
+#### 📚 Sample Datasets Included
+- **student_data.csv**: Student information
+- **phitron_student_marks.xlsx**: Course marks data
+- **students.parquet**: Compressed student data
+- **data.json**: JSON format data
+
+#### 💡 Real-World Applications
+- Student performance analysis
+- Completion status tracking
+- Marks filtering and sorting
+- Data quality assessment
+
+---
+
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -377,6 +477,7 @@ Make sure you have the following installed:
 ```bash
 Python 3.x
 NumPy
+Pandas
 Jupyter Notebook (optional, for .ipynb files)
 ```
 
@@ -390,7 +491,7 @@ cd AI_ML_Python
 
 2. **Install required packages**:
 ```bash
-pip install numpy jupyter
+pip install numpy pandas jupyter openpyxl pyarrow
 ```
 
 3. **Run Python scripts**:
@@ -422,7 +523,8 @@ jupyter notebook
 ### For AI/ML Enthusiasts:
 1. Start with **Module_10.ipynb** for NumPy basics
 2. Advance to **Module_11.ipynb** for statistical operations
-3. Practice with real datasets
+3. Master **Module_12_Related_File/Module_12.ipynb** for Pandas and data analysis
+4. Practice with real datasets (CSV, Excel, JSON, Parquet)
 
 ---
 
@@ -448,6 +550,12 @@ Week 7-8: NumPy Mastery
 ├── Array creation and manipulation
 ├── Mathematical operations
 └── Linear algebra for ML
+
+Week 9-10: Pandas for Data Science
+├── DataFrames and Series
+├── Data loading (CSV, Excel, JSON, Parquet)
+├── Data manipulation and cleaning
+└── Filtering and sorting data
 ```
 
 ---
@@ -456,17 +564,20 @@ Week 7-8: NumPy Mastery
 
 - **Python 3.x**: Core programming language
 - **NumPy**: Numerical computing library
+- **Pandas**: Data analysis and manipulation library
 - **Jupyter Notebooks**: Interactive coding environment
 
 ---
 
 ## 📊 Key Highlights
 
-✅ **50+ Python scripts and notebooks**  
+✅ **60+ Python scripts and notebooks**  
 ✅ **Comprehensive coverage** from basics to advanced  
 ✅ **Hands-on exercises** and problem-solving  
 ✅ **Real-world examples** (Phone classes, student scores)  
 ✅ **NumPy for ML/AI** preparation  
+✅ **Pandas for data analysis** with real datasets  
+✅ **Multiple file formats** (CSV, Excel, JSON, Parquet)  
 ✅ **Well-documented code** with comments  
 
 ---
