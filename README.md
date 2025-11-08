@@ -1,8 +1,14 @@
 # 🐍 AI/ML Python Learning Journey
 
-[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://www.python.org/)
-[![NumPy](https://img.shields.io/badge/NumPy-Included-green.svg)](https://numpy.org/)
-[![Jupyter](https://img.shields.io/badge/Jupyter-Notebooks-orange.svg)](https://jupyter.org/)
+[![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)](https://numpy.org/)
+[![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
+[![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)](https://jupyter.org/)
+
+![Python Version](https://img.shields.io/badge/python-3.7%2B-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Modules](https://img.shields.io/badge/modules-12-brightgreen)
+![Files](https://img.shields.io/badge/files-60%2B-orange)
 
 A comprehensive collection of Python fundamentals, data structures, and NumPy for AI/ML learning. This repository documents my learning journey from basic Python concepts to advanced NumPy operations essential for machine learning and data science.
 
@@ -562,10 +568,36 @@ Week 9-10: Pandas for Data Science
 
 ## 🛠️ Technologies Used
 
+<div align="center">
+
+### Core Technologies
+
+[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)](https://numpy.org/)
+[![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
+
+### Development Tools
+
+[![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)](https://jupyter.org/)
+[![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)](https://code.visualstudio.com/)
+[![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/)
+
+### File Formats Supported
+
+![CSV](https://img.shields.io/badge/CSV-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)
+![Excel](https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)
+![JSON](https://img.shields.io/badge/JSON-000000?style=for-the-badge&logo=json&logoColor=white)
+![Parquet](https://img.shields.io/badge/Parquet-50ABF1?style=for-the-badge&logo=apache&logoColor=white)
+
+</div>
+
+**Detailed Stack:**
 - **Python 3.x**: Core programming language
-- **NumPy**: Numerical computing library
-- **Pandas**: Data analysis and manipulation library
+- **NumPy**: Numerical computing library for arrays and mathematical operations
+- **Pandas**: Data analysis and manipulation library for DataFrames
 - **Jupyter Notebooks**: Interactive coding environment
+- **Openpyxl**: Excel file handling
+- **PyArrow**: Parquet file support
 
 ---
 
