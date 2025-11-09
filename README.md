@@ -7,8 +7,8 @@
 
 ![Python Version](https://img.shields.io/badge/python-3.7%2B-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
-![Modules](https://img.shields.io/badge/modules-12-brightgreen)
-![Files](https://img.shields.io/badge/files-60%2B-orange)
+![Modules](https://img.shields.io/badge/modules-14-brightgreen)
+![Files](https://img.shields.io/badge/files-65%2B-orange)
 
 A comprehensive collection of Python fundamentals, data structures, and NumPy for AI/ML learning. This repository documents my learning journey from basic Python concepts to advanced NumPy operations essential for machine learning and data science.
 
@@ -88,6 +88,11 @@ AI_ML_Python/
 │   ├── phitron_student_marks.xlsx  # Sample Excel dataset
 │   ├── students.parquet            # Sample Parquet dataset
 │   └── data.json                   # Sample JSON dataset
+│
+├── Module_14_File/                 # Advanced Pandas - Data Cleaning & Processing
+│   ├── Module_14.ipynb             # Advanced Pandas operations
+│   └── student_completed_data.csv  # Student completion dataset
+│
 └── start.ipynb                     # Quick Start
 ```
 
@@ -474,6 +479,129 @@ AI_ML_Python/
 
 ---
 
+### 🟣 Module 14 - Advanced Pandas Operations
+**Data cleaning, preprocessing, and advanced transformations**
+
+#### **Module_14.ipynb** Topics:
+
+#### 🔍 String Operations & Pattern Matching
+- **String methods** with `.str` accessor:
+  - contains() - Search for patterns
+  - Case-sensitive and case-insensitive searching
+  - **Regex patterns**:
+    - `^` - Starts with pattern
+    - `$` - Ends with pattern
+    - `[AEIOU]` - Character sets
+    - `|` - OR operator for multiple patterns
+- **Real examples**:
+  - Find cities containing "New"
+  - Names starting with vowels
+  - Cities starting with "Los" or ending with "rk"
+
+#### ➕ Adding New Columns
+- **Static values**: Adding constant columns
+- **Calculated columns**: Arithmetic operations across columns
+- **Conditional columns**:
+  - np.where() for if-else logic
+  - Boolean columns for pass/fail status
+- **String operations**:
+  - split() - Extracting first/last names
+  - String parsing and transformation
+
+#### 🔢 Unique Values & Counting
+- **unique()**: Get unique values from Series
+- **nunique()**: Count unique values
+- **len(unique())**: Alternative counting method
+- Applied to entire DataFrames vs individual columns
+
+#### ❓ Handling Missing Data (NULL Values)
+- **Detection**:
+  - isnull() - Check for null values
+  - notnull() - Check for non-null values
+  - hasnans - Boolean check for any nulls
+- **Removal**:
+  - dropna() - Remove rows with nulls
+  - dropna(how='all') - Remove only all-null rows
+  - dropna(subset=[cols]) - Drop based on specific columns
+- **Filling**:
+  - fillna(value) - Replace with constant
+  - fillna(mean/median) - Statistical imputation
+
+#### 🔄 Handling Duplicate Values
+- **Detection**:
+  - duplicated() - Boolean Series of duplicates
+  - duplicated().sum() - Count duplicates
+- **Removal**:
+  - drop_duplicates() - Remove duplicate rows
+  - subset parameter - Check duplicates based on specific columns
+  - keep parameter: 'first', 'last', or False
+  - inplace parameter for permanent changes
+
+#### 📊 Statistical Functions
+- **Aggregations**:
+  - sum(), min(), max()
+  - mean() - Average values
+  - median() - Middle value
+  - mode() - Most frequent value
+  - std() - Standard deviation
+- **Correlation**:
+  - corr() - Correlation matrix
+  - Between multiple columns
+- **Multi-column operations**:
+  - sum(axis=1) - Row-wise sum
+  - iloc slicing for column selection
+- **describe()**: Comprehensive statistical summary
+
+#### 🎯 Apply Functions
+- **Lambda functions** with apply():
+  - Min-max scaling normalization
+  - Mathematical transformations
+- **Custom functions**:
+  - Grading systems based on marks
+  - Complex conditional logic
+- **Row-wise operations**:
+  - apply(func, axis=1) for accessing multiple columns
+  - Weighted marks calculation
+- **Function parameters**: Accessing DataFrame columns in custom functions
+
+#### 📅 DateTime Operations
+- **Conversion**:
+  - pd.to_datetime() - Convert string to datetime
+- **Extraction**:
+  - dt.year, dt.month, dt.day
+  - dt.hour, dt.minute
+- **Time calculations**:
+  - **Timedelta**: Difference between dates
+  - Duration calculations (enrollment to completion)
+- **Date arithmetic**: Subtracting dates to get time periods
+
+#### 📦 GroupBy Operations
+- **Grouping data**: groupby() by categories
+- **Aggregations on groups**:
+  - sum(), min(), max()
+  - mean(), median(), count()
+  - first(), last()
+- **Advanced grouping**:
+  - Top N records per group
+  - Combining sort_values() with groupby()
+  - head() on grouped data
+- **Real-world use case**: Instructor-wise student performance
+
+#### 💾 Data Export
+- **Saving DataFrames**:
+  - to_csv() - Export to CSV
+  - Preserving transformations
+
+#### 🎓 Practical Applications
+- **Data cleaning pipeline**: Nulls → Duplicates → Outliers
+- **Feature engineering**: Creating new meaningful columns
+- **Text analysis**: Pattern matching in categorical data
+- **Performance metrics**: Statistical analysis of student data
+- **Time-based analysis**: Enrollment and completion tracking
+- **Group analytics**: Instructor/department-wise insights
+
+---
+
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -530,7 +658,8 @@ jupyter notebook
 1. Start with **Module_10.ipynb** for NumPy basics
 2. Advance to **Module_11.ipynb** for statistical operations
 3. Master **Module_12_Related_File/Module_12.ipynb** for Pandas and data analysis
-4. Practice with real datasets (CSV, Excel, JSON, Parquet)
+4. Learn **Module_14_File/Module_14.ipynb** for advanced data cleaning and preprocessing
+5. Practice with real datasets (CSV, Excel, JSON, Parquet)
 
 ---
 
@@ -561,7 +690,15 @@ Week 9-10: Pandas for Data Science
 ├── DataFrames and Series
 ├── Data loading (CSV, Excel, JSON, Parquet)
 ├── Data manipulation and cleaning
-└── Filtering and sorting data
+├── Filtering and sorting data
+└── Advanced operations and GroupBy
+
+Week 11-12: Data Preprocessing & Analysis
+├── String operations and regex patterns
+├── Handling missing and duplicate data
+├── Statistical functions and correlations
+├── DateTime operations and timedelta
+└── Apply functions and feature engineering
 ```
 
 ---
@@ -603,13 +740,16 @@ Week 9-10: Pandas for Data Science
 
 ## 📊 Key Highlights
 
-✅ **60+ Python scripts and notebooks**  
+✅ **65+ Python scripts and notebooks**  
 ✅ **Comprehensive coverage** from basics to advanced  
 ✅ **Hands-on exercises** and problem-solving  
 ✅ **Real-world examples** (Phone classes, student scores)  
 ✅ **NumPy for ML/AI** preparation  
 ✅ **Pandas for data analysis** with real datasets  
+✅ **Advanced data cleaning** and preprocessing techniques  
 ✅ **Multiple file formats** (CSV, Excel, JSON, Parquet)  
+✅ **Statistical analysis** and feature engineering  
+✅ **DateTime operations** for time-series data  
 ✅ **Well-documented code** with comments  
 
 ---
