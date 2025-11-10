@@ -3,12 +3,13 @@
 [![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)](https://numpy.org/)
 [![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
+[![Matplotlib](https://img.shields.io/badge/Matplotlib-11557c?style=for-the-badge&logo=python&logoColor=white)](https://matplotlib.org/)
 [![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)](https://jupyter.org/)
 
 ![Python Version](https://img.shields.io/badge/python-3.7%2B-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
-![Modules](https://img.shields.io/badge/modules-14-brightgreen)
-![Files](https://img.shields.io/badge/files-65%2B-orange)
+![Modules](https://img.shields.io/badge/modules-15-brightgreen)
+![Files](https://img.shields.io/badge/files-68%2B-orange)
 
 A comprehensive collection of Python fundamentals, data structures, and NumPy for AI/ML learning. This repository documents my learning journey from basic Python concepts to advanced NumPy operations essential for machine learning and data science.
 
@@ -37,6 +38,7 @@ This repository contains hands-on Python code examples, exercises, and Jupyter n
 - **File Handling**: Reading, writing, and manipulating files
 - **NumPy**: Arrays, operations, linear algebra, statistics
 - **Pandas**: DataFrames, data loading, cleaning, preprocessing, and analysis
+- **Matplotlib**: Data visualization with line plots, scatter plots, histograms, bar charts, and pie charts
 
 ---
 
@@ -92,6 +94,11 @@ AI_ML_Python/
 ├── Module_14_File/                 # Advanced Pandas - Data Cleaning & Processing
 │   ├── Module_14.ipynb             # Advanced Pandas operations
 │   └── student_completed_data.csv  # Student completion dataset
+│
+├── Module_15_File/                 # Matplotlib - Data Visualization
+│   ├── Module_15.ipynb             # Matplotlib visualization tutorial
+│   ├── enrollment_data.csv         # Student enrollment dataset
+│   └── student_IQdata.csv          # Student IQ and study hours dataset
 │
 └── start.ipynb                     # Quick Start
 ```
@@ -602,6 +609,115 @@ AI_ML_Python/
 
 ---
 
+### 🎨 Module 15 - Data Visualization with Matplotlib
+**Creating professional visualizations for data analysis**
+
+#### **Module_15.ipynb** Topics:
+
+#### 📈 Line Plots (2D)
+- **Basic line plots**: Visualizing trends over time
+- **Multiple lines**: Comparing multiple datasets
+- **Customization**:
+  - xlabel(), ylabel(), title() - Labels and titles
+  - color - Custom colors (hex codes, names)
+  - linewidth - Line thickness
+  - linestyle - Line styles (solid, dashed, dotted)
+  - marker - Data point markers ('o', 's', '^', etc.)
+  - markersize - Marker size
+  - label - Legend labels
+- **Legend**: plt.legend() for identifying multiple lines
+- **Grid**: plt.grid() for reference lines
+- **Display**: plt.show() to render plots
+
+#### 📊 Real-World Line Plot Example
+- **Student enrollment trends** over 8 years
+- Comparing Programming vs Digital Marketing courses
+- Multi-line visualization with custom styling
+
+#### 🔵 Scatter Plots
+- **Purpose**: Finding correlations between variables
+- **Use cases**:
+  - **Positive correlation**: Study Hours vs IQ Score
+  - **No correlation**: Shoe Size vs IQ Score
+  - **Negative correlation**: Chilling Hours vs IQ Score
+- **Customization**:
+  - color - Point colors
+  - Custom markers and sizes
+- **Analysis**: Visual correlation detection
+
+#### 📊 Histograms
+- **Purpose**: Data distribution and frequency analysis
+- **Applications**:
+  - IQ Score distribution
+  - Study Hours frequency
+- **Features**:
+  - Bins for grouping data
+  - color - Bar colors
+  - edgecolor - Border colors
+- **Use cases**:
+  - Outlier detection
+  - Distribution patterns
+  - Frequency analysis
+
+#### 📊 Bar Charts
+- **Purpose**: Categorical data comparison
+- **GroupBy integration**: Combining Pandas groupby() with bar charts
+- **Examples**:
+  - Gender distribution among students
+  - Completion status counts
+  - Location-based student distribution
+- **Customization**:
+  - Multiple colors for different categories
+  - edgecolor for bar borders
+  - xlabel, ylabel, title for context
+- **Real datasets**: Using student_data.csv
+
+#### 🥧 Pie Charts
+- **Purpose**: Showing proportions and percentages
+- **Features**:
+  - **labels**: Category names
+  - **autopct**: Percentage display format ('%1.1f%%')
+  - **explode**: Separating slices for emphasis
+  - **shadow**: 3D effect
+- **Applications**:
+  - Completion status distribution
+  - Category proportions
+- **Integration**: Using Pandas groupby() for data preparation
+
+#### 🎨 Visualization Best Practices
+- **Always add labels**: xlabel, ylabel, title
+- **Use legends**: For multi-line/category plots
+- **Color coding**: Meaningful color choices
+- **Grid lines**: For easier reading
+- **Appropriate chart types**:
+  - Line plots → Trends over time
+  - Scatter plots → Correlations
+  - Histograms → Distributions
+  - Bar charts → Category comparisons
+  - Pie charts → Proportions
+
+#### 📚 Sample Datasets
+- **enrollment_data.csv**: 8 years of course enrollment data
+- **student_IQdata.csv**: IQ scores, study hours, chilling hours, shoe size
+- **student_data.csv**: Comprehensive student information
+
+#### 💡 Key Skills Learned
+- Creating multiple plot types
+- Customizing visual appearance
+- Combining Pandas and Matplotlib
+- Correlation analysis through visualization
+- Distribution analysis
+- Categorical data visualization
+- Professional chart formatting
+
+#### 🔧 Matplotlib Integration
+- **Import**: `import matplotlib.pyplot as plt`
+- **Works seamlessly** with NumPy arrays and Pandas DataFrames
+- **Interactive plotting** in Jupyter notebooks
+- **Publication-ready** visualizations
+
+---
+
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -612,6 +728,7 @@ Make sure you have the following installed:
 Python 3.x
 NumPy
 Pandas
+Matplotlib
 Jupyter Notebook (optional, for .ipynb files)
 ```
 
@@ -625,7 +742,7 @@ cd AI_ML_Python
 
 2. **Install required packages**:
 ```bash
-pip install numpy pandas jupyter openpyxl pyarrow
+pip install numpy pandas matplotlib jupyter openpyxl pyarrow
 ```
 
 3. **Run Python scripts**:
@@ -659,7 +776,8 @@ jupyter notebook
 2. Advance to **Module_11.ipynb** for statistical operations
 3. Master **Module_12_Related_File/Module_12.ipynb** for Pandas and data analysis
 4. Learn **Module_14_File/Module_14.ipynb** for advanced data cleaning and preprocessing
-5. Practice with real datasets (CSV, Excel, JSON, Parquet)
+5. Visualize with **Module_15_File/Module_15.ipynb** for Matplotlib and data visualization
+6. Practice with real datasets (CSV, Excel, JSON, Parquet)
 
 ---
 
@@ -699,6 +817,13 @@ Week 11-12: Data Preprocessing & Analysis
 ├── Statistical functions and correlations
 ├── DateTime operations and timedelta
 └── Apply functions and feature engineering
+
+Week 13-14: Data Visualization
+├── Line plots for trend analysis
+├── Scatter plots for correlation detection
+├── Histograms for distribution analysis
+├── Bar charts for categorical comparisons
+└── Pie charts for proportional representation
 ```
 
 ---
@@ -712,6 +837,7 @@ Week 11-12: Data Preprocessing & Analysis
 [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)](https://numpy.org/)
 [![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
+[![Matplotlib](https://img.shields.io/badge/Matplotlib-11557c?style=for-the-badge&logo=plotly&logoColor=white)](https://matplotlib.org/)
 
 ### Development Tools
 
@@ -732,6 +858,7 @@ Week 11-12: Data Preprocessing & Analysis
 - **Python 3.x**: Core programming language
 - **NumPy**: Numerical computing library for arrays and mathematical operations
 - **Pandas**: Data analysis and manipulation library for DataFrames
+- **Matplotlib**: Comprehensive data visualization library for creating static, animated, and interactive plots
 - **Jupyter Notebooks**: Interactive coding environment
 - **Openpyxl**: Excel file handling
 - **PyArrow**: Parquet file support
@@ -740,16 +867,18 @@ Week 11-12: Data Preprocessing & Analysis
 
 ## 📊 Key Highlights
 
-✅ **65+ Python scripts and notebooks**  
+✅ **68+ Python scripts and notebooks**  
 ✅ **Comprehensive coverage** from basics to advanced  
 ✅ **Hands-on exercises** and problem-solving  
 ✅ **Real-world examples** (Phone classes, student scores)  
 ✅ **NumPy for ML/AI** preparation  
 ✅ **Pandas for data analysis** with real datasets  
 ✅ **Advanced data cleaning** and preprocessing techniques  
+✅ **Matplotlib visualizations** - 5+ chart types  
 ✅ **Multiple file formats** (CSV, Excel, JSON, Parquet)  
 ✅ **Statistical analysis** and feature engineering  
 ✅ **DateTime operations** for time-series data  
+✅ **Correlation analysis** through visual exploration  
 ✅ **Well-documented code** with comments  
 
 ---
