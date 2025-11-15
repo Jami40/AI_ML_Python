@@ -6,10 +6,10 @@
 [![Matplotlib](https://img.shields.io/badge/Matplotlib-11557c?style=for-the-badge&logo=python&logoColor=white)](https://matplotlib.org/)
 [![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)](https://jupyter.org/)
 
-![Python Version](https://img.shields.io/badge/python-3.7%2B-blue)
-![License](https://img.shields.io/badge/license-MIT-green)
-![Modules](https://img.shields.io/badge/modules-15-brightgreen)
-![Files](https://img.shields.io/badge/files-68%2B-orange)
+[![Python Version](https://img.shields.io/badge/python-3.7%2B-blue)
+[![License](https://img.shields.io/badge/license-MIT-green)
+[![Modules](https://img.shields.io/badge/modules-16-brightgreen)
+[![Files](https://img.shields.io/badge/files-71%2B-orange)
 
 A comprehensive collection of Python fundamentals, data structures, and NumPy for AI/ML learning. This repository documents my learning journey from basic Python concepts to advanced NumPy operations essential for machine learning and data science.
 
@@ -100,6 +100,11 @@ AI_ML_Python/
 │   ├── enrollment_data.csv         # Student enrollment dataset
 │   └── student_IQdata.csv          # Student IQ and study hours dataset
 │
+├── Module_16/                      # Seaborn & Plotly - Advanced Visualization (Final)
+│   ├── Module_16.ipynb             # Seaborn & Plotly interactive visualization
+│   ├── enrollment_data.csv         # Enrollment dataset (used in examples)
+│   └── student_completed_data.csv  # Student completion & timing dataset
+|
 └── start.ipynb                     # Quick Start
 ```
 
@@ -867,7 +872,7 @@ Week 13-14: Data Visualization
 
 ## 📊 Key Highlights
 
-✅ **68+ Python scripts and notebooks**  
+✅ **71+ Python scripts and notebooks**  
 ✅ **Comprehensive coverage** from basics to advanced  
 ✅ **Hands-on exercises** and problem-solving  
 ✅ **Real-world examples** (Phone classes, student scores)  
@@ -879,7 +884,8 @@ Week 13-14: Data Visualization
 ✅ **Statistical analysis** and feature engineering  
 ✅ **DateTime operations** for time-series data  
 ✅ **Correlation analysis** through visual exploration  
-✅ **Well-documented code** with comments  
+✅ **Seaborn & Plotly interactive visualizations**  
+✅ **Well-documented code** with comments
 
 ---
 
@@ -921,3 +927,11 @@ Special thanks to **Phitron** for the structured AI/ML curriculum and learning m
 **Happy Learning! 🚀**
 
 </div>
+
+---
+
+## 🎓 Course Completion — End of Python for AI/ML
+
+Module 16 (Seaborn & Plotly) completes the "Python for AI/ML" curriculum in this repository. This final module focuses on advanced visualization techniques for exploratory data analysis and communicating results. A dedicated README for Module 16 is available at `Module_16/README.md`.
+
+If you'd like this repository packaged into a single downloadable release (zip) or synced with a GitHub Pages site for interactive demo notebooks, I can prepare the necessary files and instructions.
